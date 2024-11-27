@@ -1,0 +1,62 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/white"
+    android:padding="20dp"
+    android:layout_margin="8dp"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <!-- ImageView for the image -->
+        <ImageView
+            android:id="@+id/iv_wisata"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Vertical LinearLayout to contain both TextViews (name and rating) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp">
+
+            <!-- Nama Wisata TextView positioned at the top of the LinearLayout -->
+            <TextView
+                android:id="@+id/tv_wisata_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_wisata"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_corner"
+                android:padding="4dp"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart" />
+
+            <!-- Rating TextView positioned below the Nama Wisata TextView -->
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4_5"
+                android:textSize="15dp"
+                android:drawableLeft="@drawable/baseline_star_24"
+                android:padding="4dp"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_corner"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

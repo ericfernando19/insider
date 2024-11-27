@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/white" /> <!-- Warna latar -->
+    <corners android:radius="30dp" /> <!-- Radius sudut -->
+</shape>
