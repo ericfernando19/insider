@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1001881652471",
+    "project_id": "malang-insider",
+    "storage_bucket": "malang-insider.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001881652471:android:b36779439fffb0ac3617f2",
+        "android_client_info": {
+          "package_name": "com.dicoding.malanginsider"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU38jRxaROFSbx6MBPSmaFv44kWpN7spY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
