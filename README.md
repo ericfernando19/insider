@@ -27,7 +27,7 @@ Team ID : C242-PS275
 -  [Malang Insider CC](https://github.com/ericfernando19/insider)
 
 ### Mobile Development
--  [Malang Insider MD](https://github.com/ericfernando19/insider)
+-  [Malang Insider MD](https://github.com/ericfernando19/insider/tree/main/Md/InsiderApp)
 
 ## Mockup
 <p align="center">
