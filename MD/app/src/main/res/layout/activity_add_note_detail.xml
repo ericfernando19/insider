@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    tools:context=".ui.catatan.AddNoteDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Judul -->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah Catatan Baru"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Gambar Wisata -->
+            <ImageView
+                android:id="@+id/img_wisata"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Nama Wisata -->
+            <TextView
+                android:id="@+id/tv_Wisata_Terpilih"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Wisata"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/img_wisata"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Alamat Wisata -->
+            <TextView
+                android:id="@+id/tv_alamat_wisata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat: -"
+                app:layout_constraintTop_toBottomOf="@id/tv_Wisata_Terpilih"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Rating Wisata -->
+            <TextView
+                android:id="@+id/tv_rating_wisata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rating: -"
+                app:layout_constraintTop_toBottomOf="@id/tv_alamat_wisata"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Judul Catatan -->
+            <EditText
+                android:id="@+id/et_judul_catatan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Judul Catatan"
+                android:inputType="text"
+                app:layout_constraintTop_toBottomOf="@id/tv_rating_wisata"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Isi Catatan -->
+            <EditText
+                android:id="@+id/et_catatan"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:hint="Tulis catatan Anda..."
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:background="@android:drawable/edit_text"
+                app:layout_constraintTop_toBottomOf="@id/et_judul_catatan"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Rekomendasi -->
+            <TextView
+                android:id="@+id/tv_list_rekomendasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penginapan dan Restoran Terdekat"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/et_catatan"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_rekomendasi"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/tv_list_rekomendasi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Simpan Catatan"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/biru"
+                app:layout_constraintTop_toBottomOf="@id/rv_rekomendasi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
