@@ -21,7 +21,7 @@ Team ID : C242-PS275
 ## Repository
 
 ###  Machine Learning
-- [Malang Insider ML](https://github.com/valen673/MalangInsider-ML)
+- [Malang Insider ML](https://github.com/ericfernando19/insider/tree/main/MalangInsider-ML-main)
 
 ### Cloud Computing
 -  [Malang Insider CC](https://github.com/ericfernando19/insider)
