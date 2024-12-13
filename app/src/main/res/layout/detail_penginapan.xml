@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.detail.DetailPenginapan">
+
+    <!-- Gambar latar -->
+    <ImageView
+        android:id="@+id/Detail_gamabar_penginapan"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:src="@drawable/gambar"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="Kembali"
+        android:src="@drawable/ic_back"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="200dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Judul dan rating -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/detail_nama_penginapan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nama wisata penginapan"
+                    android:textColor="@color/biru"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    android:id="@+id/detail_rating_penginapan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="0dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="5"
+                    android:scaleX="0.3"
+                    android:scaleY="0.3" />
+            </LinearLayout>
+
+            <!-- Lokasi dan map -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detal_alamat_penginapan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jl. Merdeka Selatan, Malang, Jawa Timur"
+                    android:textStyle="italic"
+                    android:textColor="@color/hitam"
+                    android:layout_marginBottom="8dp"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnMap"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_map"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="Buka di Maps" />
+
+                    <TextView
+                        android:id="@+id/tvOpenInMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buka di Google Maps"
+                        android:textColor="@color/biru"
+                        android:paddingStart="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Deskripsi tempat wisata -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/cardInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnContactNow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:background="@color/biru_pudar"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:text="Deskripsi : " />
+
+                    <TextView
+                        android:id="@+id/detail_deskripsi_alam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Penginapan adalaha..."
+                        android:lineSpacingExtra="4dp"
+                        android:textColor="@android:color/black" />
+
+
+                    <!-- Jam buka tempat wisata -->
+                    <TextView
+                        android:id="@+id/judul_jam_buka"
+                        android:layout_width="159dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:text="Jam Buka :"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <!-- Menampilkan jam buka untuk setiap hari -->
+                    <LinearLayout
+                        android:layout_width="159dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <!-- Jam buka per hari -->
+                        <TextView
+                            android:id="@+id/jam_buka_senin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Senin: 08:00 - 17:00"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/jam_buka_selasa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Selasa: 08:00 - 17:00"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/jam_buka_rabu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rabu: 08:00 - 17:00"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/jam_buka_kamis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kamis: 08:00 - 17:00"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/jam_buka_jumat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jumat: 08:00 - 17:00"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/jam_buka_sabtu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sabtu: 08:00 - 17:00"
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:id="@+id/jam_buka_minggu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Minggu: 08:00 - 17:00"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Tombol Hubungi Sekarang -->
+    <Button
+        android:id="@+id/btnContactNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Hubungi Sekarang"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/biru"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
