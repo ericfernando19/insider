@@ -1,4 +1,5 @@
-![WhatsApp Image 2024-12-13 at 11 27 19](https://github.com/user-attachments/assets/3fa232ff-294c-4a0f-8b4a-a19e27102b8b)
+<p align="center"><a href="https://github.com/ericfernando19/insider" target="_blank"><img src="https://github.com/user-attachments/assets/3fa232ff-294c-4a0f-8b4a-a19e27102b8b" width="400" alt="MalangInsider Logo"></a></p>
+
 
 # MALANG INSIDER
 Malang, known as one of the most charming cities in Indonesia, is a favorite destination for travelers due to its cool climate, historical significance, and diverse attractions. The city offers a perfect blend of natural beauty, cultural heritage, and modern amenities. From picturesque mountains and lush green tea plantations to vibrant theme parks and colonial-era architecture, Malang caters to a wide range of tourist interests.
