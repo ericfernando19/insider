@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/ericfernando19/insider" target="_blank"><img src="https://github.com/user-attachments/assets/3fa232ff-294c-4a0f-8b4a-a19e27102b8b" width="400" alt="MalangInsider Logo"></a></p>
+<p align="center"><a href="https://github.com/ericfernando19/insider" target="_blank"><img src="https://github.com/user-attachments/assets/483b89ee-e9a0-4586-b6ea-2af29fa9b851" width="400" alt="MalangInsider Logo"></a></p>
 
 
 # MALANG INSIDER
@@ -44,7 +44,3 @@ Team ID : C242-PS275
   <img src="https://github.com/user-attachments/assets/685b5b30-d415-4a43-b6bd-181b15d682c5" width="200">
   <img src="https://github.com/user-attachments/assets/90b9ca9f-701e-4923-be2a-b1d2c000039f" width="200">
 </p>
-
-
-
-
